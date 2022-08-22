@@ -19,10 +19,10 @@ int main(int argc, char* argv[]) {
 	SDL_Renderer* renderer=nullptr;
 	renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
 
-	SDL_Surface* surface = SDL_LoadBMP("C:/Users/Raul Loscertales/OneDrive/Escritorio/Programacion/SDLPROJECTS/Chess/images/board640px.bmp");
+	SDL_Surface* surface = SDL_LoadBMP("/.../SDLPROJECTS/Chess/images/board640px.bmp");//Change path
 	if (surface == NULL)
 	{
-		printf("Unable to load image %s! SDL Error: %s\n", "/....../SDLPROJECTS/Chess/images/board640.bmp", SDL_GetError());
+		printf("Unable to load image %s! SDL Error: %s\n", "/....../SDLPROJECTS/Chess/images/board640.bmp", SDL_GetError());//Change path
 	}
 
 	SDL_Texture* texture = SDL_CreateTextureFromSurface(renderer, surface);
