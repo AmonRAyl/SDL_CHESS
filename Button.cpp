@@ -2,9 +2,9 @@
 Button::Button(int x, int y, SDL_Renderer* renderer) :m_sRect{x,y,80,80},m_dRect{x,y,80,80}
 {
 	m_piece = NULL;
-	SDL_Texture* t = IMG_LoadTexture(renderer, "C:/Users/Raul Loscertales/OneDrive/Escritorio/Programacion/SDLPROJECTS/Chess/images/blackarrayinv2.png");
+	SDL_Texture* t = IMG_LoadTexture(renderer, "/..../SDLPROJECTS/Chess/images/blackarrayinv2.png");//Change path
 	m_T = t;
-	t = IMG_LoadTexture(renderer, "C:/Users/Raul Loscertales/OneDrive/Escritorio/Programacion/SDLPROJECTS/Chess/images/blackarray.png");
+	t = IMG_LoadTexture(renderer, "/..../SDLPROJECTS/Chess/images/blackarray.png");//Change path
 	m_Ts = t;
 	m_aux = m_T;
 	m_selected = false;
@@ -14,9 +14,9 @@ Button::Button(int x, int y, SDL_Renderer* renderer) :m_sRect{x,y,80,80},m_dRect
 Button::Button(int x, int y, SDL_Renderer* renderer,char white) :m_sRect{ x,y,80,80 }, m_dRect{ x,y,80,80 }
 {
 	m_piece = NULL;
-	SDL_Texture* t = IMG_LoadTexture(renderer, "C:/Users/Raul Loscertales/OneDrive/Escritorio/Programacion/SDLPROJECTS/Chess/images/whitearrayinv2.png");
+	SDL_Texture* t = IMG_LoadTexture(renderer, "/..../SDLPROJECTS/Chess/images/whitearrayinv2.png");//Change path
 	m_T = t;
-	t = IMG_LoadTexture(renderer, "C:/Users/Raul Loscertales/OneDrive/Escritorio/Programacion/SDLPROJECTS/Chess/images/whitearray.png");
+	t = IMG_LoadTexture(renderer, "/..../SDLPROJECTS/Chess/images/whitearray.png");//Change path
 	m_Ts = t;
 	m_aux = m_T;
 	m_selected = false;
